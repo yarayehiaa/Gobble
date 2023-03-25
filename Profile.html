@@ -1,0 +1,396 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profilecss.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editprofilecss.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="framework.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="background-image: url(3575868.jpg); position: relative; overflow-x: hidden;">
+    <div class="page d-flex" style="flex-direction:column ;">
+        
+        <div class="sidebar bg-white p-20 " style="text-decoration: none; position: sticky; top: 0; left:0px; height: 100vh;">
+            <h1 style="font-family:'Bungee', 'Arial Narrow', Arial, sans-serif; color: coral; ">
+                GOBBLE</h1>
+
+            <ul style="text-decoration: none;">
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="FEED.html">
+                        <i class="fa fa-home fa-fw"></i>
+                        <span style="text-decoration: none;">Feed</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="edit profile.html">
+                        <i class="fa fa-cog fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" active d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="friends.html">
+                        <i class="fa fa-users"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="Login Page.html">
+                      <i class="fa fa-sign-out"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </li>
+            </ul>
+        </div>
+        <div class="content " style=" position: absolute;top: 0; left: 0%; width: 110%;">
+            <div>
+                <nav class="nav sticky-top navbar-default" style="background-color:white ; width: 77%; transform: translateX(19%); ">
+                    <div class="search-container" style="display:flex ; margin-left: 2%; margin-right: 2%; transform: translate(5%,12%); ">
+                            <form class="search" action="/action_page.php"
+                                style="flex-direction: row; align-items:center; display: flex;">
+                                <input class="" type="text" placeholder="Search.." name="search" />
+                                <button style="float:initial" type="submit"><i class="fa fa-search"></i></button>
+    
+                            </form>
+                        </div>
+                        <div style="transform:translate(10%,10%);">
+                            <ul style="list-style: none; align-items: center; padding-left:3%; display: flex;">  
+            
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-link btn-floating mx-1 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                        <i class="fa fa-bell fa-2x" style="color:coral;" onclick="toggleNotifi()"></i>
+                                    </button>
+                                    
+                                    <ul class="dropdown-menu" id="box1">
+                                        <h2>Notifications <span>  17</span></h2>
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-13.png" alt="img">
+                                            <div class="text">
+                                               <h4>Elias Abdurrahman</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-03.png" alt="img">
+                                            <div class="text">
+                                               <h4>John Doe</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-02.png" alt="img">
+                                            <div class="text">
+                                               <h4>Emad Ali</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-01.png" alt="img">
+                                            <div class="text">
+                                               <h4>Emad Ali</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                                    </ul>
+    
+                                </div>
+                                <div>
+                                     <button type="button" class="btn btn-link btn-floating mx-1 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                        <i class="fa fa-message fa-2x" style="color:coral;" onclick="toggleNotifi2()"></i>
+                                    </button>
+                                    <div class="dropdown-menu" id="box2">
+                                        <h2>Messages<span>  17</span></h2>
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-13.png" alt="img">
+                                            <div class="text">
+                                               <h4>Elias Abdurrahman</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-03.png" alt="img">
+                                            <div class="text">
+                                               <h4>John Doe</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                            
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-02.png" alt="img">
+                                            <div class="text">
+                                               <h4>Emad Ali</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                                        <div class="notifi-item">
+                                            <img src="Avatars Set Flat Style-01.png" alt="img">
+                                            <div class="text">
+                                               <h4>Emad Ali</h4>
+                                               <p>@lorem ipsum dolor sit amet</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div>
+                                    <a href="Profile.html" style="right: auto;">
+                                        <img src="Avatars Set Flat Style-16.png" style="height:30px ; width: 35px; ">
+                                      </a>
+                                    </div>
+                                
+                            </ul>
+                        </div>
+                    
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div style="margin:40px; ">
+            <div class="card mx-auto" style="height: fit-content; transform: translate(120px,-350px); width: 80%;">
+                <div class="card-body">
+                    <pre><h2>  200       50       19  </h2></pre>
+                  
+                    <p style="font-size: 25 px; font-style:oblique;"> &nbsp; &nbsp; &nbsp; &nbsp; Reviews
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Friends &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        5star-ratings
+                    </p>
+                    <button
+                        style="margin-left: 630px;margin-top: -80px; height: 50px; background-color: coral; border-color: coral; width: 150px;  "
+                        type="button" class="btn btn-primary" onclick="Change_following()" id="follow_btn" >Follow</button>
+                    <div class="chatbox-wrapper">
+                            <div class="chatbox-toggle">
+                    <button
+                        style="margin-left: 800px;margin-top: -80px; height: 50px; background-color: coral; border-color: coral; width: 150px; transform: translateY(57%); "
+                        type="button" class="btn btn-primary">Message</button>
+                            </div>
+                    </div>
+                    <p style="font-size:50px; font-style:oblique; margin-left: 31%; margin-top: 5%;">Aisha Moghazy</p>
+                    <div style="margin-left: 00px ; text-align: center;">
+                        <p> <i class="fa fa-location-arrow"> </i> Alexandria, Egypt</p>
+                        <p> <i class="fa fa-heart-o"> </i> Single</p>
+                        <p> <i class="fa fa-desktop"> </i> Works at Self-employed pirate</p>
+                        <p><i class="fa fa-book"> </i> Studied at Pirate International University</p>
+                    </div>
+                    <div style="margin: 40px;">
+                        <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="avatar" class="card"
+                style="width: 15rem; position: absolute;box-shadow: 10px 10px 5px lightblue; border-width: 0px; transform: translate(250%,-370%); ">
+                <img src="WhatsApp Image 2022-11-18 at 7.31.51 PM.jpeg"
+                    class="card-img-top" style="background-color: white;">
+
+            </div>
+        </div>
+    
+        <!-- posts -->
+
+        <div style="width: 1010px; margin-left: 300px; margin-top: -350px;">
+            <div style="margin-bottom: 20px;">
+
+                <div class="latest-post" style="padding: 20px; background-color:white ; border-radius: 10px;">
+
+                    <div class="top" style="display:flex; align-items:center;">
+                        <div class="friend-info" >
+                        <figure>
+                            <img class="avatar" style="margin-right: 15px; margin-bottom: 15px; height: 70px;" src="baily.jpeg" >
+                        </figure>
+                        <div class="friend-name">
+                            <ins><a href="Profile.html" title="">Omar Ehab</a></ins>
+                            <span>published: january,5 2018 19:PM</span>
+                        </div>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="padding: 10px; margin:10px,0px,10px,0px" class="post-content" >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                        irure
+                    </div>
+                    <div class="post-stats"
+                        style="display: flex; align-items: center; justify-content: space-between; color:gray;">
+                        <div>
+                            <span class="fa fa-heart" onclick="Change_CLR(this)">1</span>
+                            
+                        </div>
+                        <div>
+                            <span class="fa fa-comment"></span>
+                            <span class="commnum">0</span>
+                        </div>
+                    </div>
+                    <div class="coment-area">
+                        <ul class="we-comet">
+                        </ul>
+                            <div class="post-comment" >
+                                <div class="comet-avatar" style="transform: translate(0%,20%);">
+                                    <img src="Avatars Set Flat Style-16.png" class="avatar" style="height:50px ;">
+                                </div>
+                                <div class="post-comt-box">
+                                    <form method="post">
+                                        <textarea placeholder="Post your comment"></textarea>
+                                       
+                                        <button onclick="cc(this)" type="button">POST</button>
+                                    </form>	
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        
+    
+
+        
+            <div class="wrapper-2" >
+                <div class="latest-post" style="padding: 20px; background-color:white ; border-radius: 10px;">
+                <div class="user-post"  >
+                    <div class="friend-info">
+                        <figure>
+                            <img class="avatar" style="margin-right: 15px;  height: 70px;" src="baily.jpeg" >
+                        </figure>
+                        <div class="friend-name">
+                            <ins><a href="time-line.html" title="">Omar Ehab</a></ins>
+                            <span>published: january,5 2018 19:PM</span>
+                        </div>
+                    </div>
+                        <div class="post-meta">
+                           
+                            
+                            <div class="post-content" style="padding:10px ;">
+                                
+                                
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure
+                                
+                            </div>
+                            <div class="post-stats"
+                            style="display: flex; align-items: center; justify-content: space-between; color:gray;">
+                            <div>
+                                <span class="fa fa-heart" onclick="Change_CLR(this)">18</span>
+                                
+                            </div>
+                            <div>
+                                <span class="fa fa-comment"></span>
+                                <span class="commnum">2</span>
+                            </div>
+                        </div>
+                        </div>
+                   
+                    <div class="coment-area">
+                        <ul class="we-comet">
+                            <li>
+                                <div class="comet-avatar">
+                                    <img src="WhatsApp Image 2022-11-18 at 7.31.51 PM.jpeg" class="avatar" style="margin-right: 15px;  height: 70px;">
+                                </div>
+                                <div class="we-comment">
+                                    <div class="coment-head">
+                                        <h5><a href="time-line.html" title="">Aisha Moghazy</a></h5>
+                                        <span>1 year ago</span>
+                                       
+                                    </div>
+                                    <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                       </p>
+                                </div>
+        
+                            </li>
+                            <li>
+                                <div class="comet-avatar">
+                                    <img src="farah.jpeg"class="avatar" style="margin-right: 15px;  height: 70px;">
+                                </div>
+                                <div class="we-comment">
+                                    <div class="coment-head">
+                                        <h5><a href="time-line.html" title="">Farah Abdelaziz</a></h5>
+                                        <span>1 week ago</span>
+                                       
+                                    </div>
+                                    <p >  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut 
+                                        
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                            <div class="post-comment" >
+                                <div class="comet-avatar" style="transform: translate(0%,20%);">
+                                    <img src="Avatars Set Flat Style-16.png" class="avatar" style="height:50px ;">
+                                </div>
+                                <div class="post-comt-box">
+                                    <form method="post">
+                                        <textarea placeholder="Post your comment"></textarea>
+                                       
+                                        <button onclick="cc(this)" type="button">POST</button>
+                                    </form>	
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    
+    </div>
+    <div class="chatbox-message-wrapper">
+        <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+                <img src="WhatsApp Image 2022-11-18 at 7.31.51 PM.jpeg" alt="" class="chatbox-message-image">
+                <div>
+                    <h4 class="chatbox-message-name">Aisha Moghazy</h4>
+                    <p class="chatbox-message-status">online</p>
+                </div>
+            </div>
+            <div class="chatbox-message-dropdown chatbox-message-dropdown-toggle">
+                <i class='fa fa-user' style="color: green;"></i>
+                
+               
+            </div>
+        </div>
+        <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">You don't have any messages yet!</h4>
+        </div>
+        <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+            </form>
+        </div>
+    </div>    
+    
+    
+
+<script src="js/myjs.js"></script>
+<script src="js/yassinscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+
+</html>

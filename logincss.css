@@ -1,0 +1,23 @@
+.nav-tabs{
+ 
+    border: 10px;
+    border-color: coral;
+     
+    }
+    .nav-tabs > li > a:hover{
+ 
+        background-color: #3D515F !important;
+         
+        border-radius: 5px;
+         
+        color:#fff;
+         
+        border:1px solid black;
+         
+        }
+        input.form-check-input{
+            accent-color: coral;
+        }
+
+
+
